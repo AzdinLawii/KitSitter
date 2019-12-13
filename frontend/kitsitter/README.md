@@ -1,4 +1,9 @@
-# Kitsitter
+# Kitsitter - front
+ ##pour installer
+ `cd frontend` puis
+  `npm install @angular/cli` puis
+  `cd kitsitter` puis
+   `npm install`
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
