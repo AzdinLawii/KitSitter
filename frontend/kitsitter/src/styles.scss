@@ -1,22 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 
-h1{
+h1,a,h2, button{
+  font-family: 'Chewy', cursive;
   color:#EB611C;
- font-family: 'Chewy', cursive;
+}
+h1{
   font-size: 4em;
   margin:2%;
 }
 
+
 h2{
   font-size: 2em;
-  font-family: 'Chewy', cursive;
-  color:#EB611C;
 }
 
-p{
+p, span{
   font-family: Arial;
-  font-size: 12px;
+  font-size: 1em;
 }
+
+span{
+  font-weight: bold;
+}
+
+
 :root {
   font-size: 16px;
 
@@ -103,6 +110,8 @@ nav > a#menu-button.hidden {
     background-color: var(--nv-bgc);
     width: var(--nv-min-width);
   }
+
+
 }
 
 
@@ -119,6 +128,18 @@ nav > a#menu-button.hidden {
   nav > a.void::after,
   nav > a.apart::after {
     content: '';
+  }
+
+}
+@media screen and (max-width: 851px) {
+
+
+  h1{
+    font-size: 2em;
+  }
+
+  h2{
+    font-size: 1.5em;
   }
 
 }

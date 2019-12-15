@@ -1,20 +1,103 @@
-h1{
+h1 {
   text-align: center;
 }
 
-article{
-  display:flex;
-  margin:auto;
+article {
+  display: flex;
+  margin: auto;
   width: 60%;
 }
 
-article>section{
+article:first-of-type > section {
   width: 33%;
   text-align: center;
 }
-article>section>img{
-  width:40%;
+
+article > section > img {
+  width: 40%;
   padding: 5%;
-  border-radius:100%;
+  border-radius: 100%;
   background-color: #FFAA80;
 }
+
+input {
+  margin-left: 70%;
+  margin-top: 2%;
+  padding: 1%;
+  width: 20%;
+  border-radius: 10px;
+  border: 3px solid #4E901E;
+}
+
+article:nth-of-type(2) > section {
+  width: 50%;
+  padding: 5%;
+  text-align: center;
+}
+
+button {
+  text-decoration: none;
+  font-size: 2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*************************************************************mobile*****************************************************/
+@media screen and(max-width: 1024px) {
+
+  .full-line-center {
+    width: 100%;
+    margin-top: 5%;
+  }
+  article:first-of-type > section {
+    width: 100%;
+    text-align: center;
+  }
+  input {
+    display: none;
+  }
+
+  article {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-bottom: 20%;
+  }
+  article:first-of-type > section {
+
+    display: inline;
+  }
+  article > section > img {
+    text-align: center;
+    margin-top: 5%;
+  }
+  article:nth-of-type(2) > section {
+    width: 90%;
+    padding: 0;
+    margin: 3% auto auto;
+  }
+
+
+  article > section {
+    width: 90%;
+    margin-top: 2%;
+  }
+
+  article:nth-of-type(2) > section > button {
+    width: 100%;
+    color: white;
+    background-color: #4E901E;
+    border-radius: 10px;
+    font-size: 1.5em;
+    padding: 2%;
+  }
+  article > section:nth-of-type(2) > button {
+    width: 100%;
+    color: white;
+    background-color: #EB611C;
+    border-radius: 10px;
+
+  }
+}
+
