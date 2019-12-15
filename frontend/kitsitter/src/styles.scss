@@ -1,1 +1,144 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  font-size: 16px;
+
+  --hd-height: 0;
+  --hd-min-height: 0;
+  --hd-bgc: none;
+
+
+  --ft-height: 5%;
+  --ft-min-height: 50px;
+  --ft-bgc: #ffaa80;
+  --ft-width: calc(100% - var(--nv-width));
+
+  --nv-height: 100%;
+  --nv-width: 15%;
+  --nv-min-width: 80px;
+  --nv-bgc: #EB611C;
+  --nv-padding: 5px;
+
+  --mn-height: calc(100% - var(--hd-height) - var(--ft-height));
+  --mn-min-height: calc(100% - var(--hd-min-height) - var(--ft-min-height));
+  --mn-bgc: #FCF7EC;
+
+  --z-index-frame: 1;
+
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-size: 0;
+}
+
+body > * {
+  font-size: 1rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: var(--hd-height);
+  min-height: var(--hd-min-height);
+  width: 100%;
+  background-color: var(--hd-bgc);
+  z-index: var(--z-index-frame);
+}
+
+nav {
+  position: fixed;
+  display: inline-block;
+  width: var(--nv-width);
+  min-width: var(--nv-min-width);
+  z-index: var(--z-index-frame);
+  padding: var(--nv-padding) 0;
+  background-color: var(--nv-bgc);
+  text-align: center;
+  font-family: 'Chewy', cursive;
+}
+
+nav.collapsed {
+  width: 0;
+}
+
+nav > a {
+  display: block;
+  width: 100%;
+  margin: 0;
+  text-decoration: none;
+  color:var(--mn-bgc);
+}
+
+nav > a#menu-button.hidden {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 641px) {
+  nav > a.apart {
+    z-index: 1;
+    position: absolute;
+    top: var(--nv-padding);
+    border-radius: 5%;
+    background-color: var(--nv-bgc);
+    width: var(--nv-min-width);
+  }
+}
+
+
+@media screen and (min-width: 851px) {
+
+  nav > a::after {
+    content: attr(title);
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    transform: translateY(-5%);
+  }
+
+  nav > a.void::after,
+  nav > a.apart::after {
+    content: '';
+  }
+
+}
+
+nav > a:hover {
+  transform: scale(1.1);
+}
+
+main {
+  display: inline-block;
+  background-color: var(--mn-bgc);
+}
+
+main > p {
+  padding: 0 10% 10% 10%;
+  text-align: justify;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: var(--ft-height);
+  min-height: var(--ft-min-height);
+  width: 100%;
+  background-color: var(--ft-bgc);
+  z-index: var(--z-index-frame);
+}
+footer::before{
+  content:'Copyright Kitsitter 2019';
+  display: block;
+  line-height: var(--ft-min-height);
+  width:100%;
+  text-align: center;
+  font-family : 'Chewy', cursive;
+}
+
+.full-line-center {
+  display: block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
