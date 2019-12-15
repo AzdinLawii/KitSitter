@@ -13,6 +13,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 
 
 
+
 window.addEventListener('resize', function () {
   adaptApartLink();
   setTopPosition();
@@ -117,4 +118,23 @@ function adaptApartLink() {
     });
     MENU_BTN.classList.remove('hidden');
   }
+}
+setTopPosition();
+setHeight();
+setMainWidth();
+setNavLinksPosition();
+adaptApartLink();
+
+const NAV_BTN = document.getElementById('menu-button');
+NAV_BTN.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+  const NAV = document.getElementsByTagName('nav')[0];
+  NAV.classList.toggle('collapsed');
+  const NAV_LINKS = NAV.getElementsByTagName('a');
+  Array.from(NAV_LINKS).forEach(function(el){
+    el.classList.toggle('void');
+  });
+
+  setMainWidth();
 }

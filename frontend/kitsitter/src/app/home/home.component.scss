@@ -44,7 +44,7 @@ button {
 }
 
 /*************************************************************mobile*****************************************************/
-@media screen and(max-width: 1024px) {
+@media screen and(max-width: 641px) {
 
   .full-line-center {
     width: 100%;
@@ -53,7 +53,10 @@ button {
   article:first-of-type > section {
     width: 100%;
     text-align: center;
+    display: block;
+    margin-bottom:5%;
   }
+
   input {
     display: none;
   }
@@ -64,10 +67,7 @@ button {
     width: 100%;
     margin-bottom: 20%;
   }
-  article:first-of-type > section {
 
-    display: inline;
-  }
   article > section > img {
     text-align: center;
     margin-top: 5%;
@@ -75,7 +75,7 @@ button {
   article:nth-of-type(2) > section {
     width: 90%;
     padding: 0;
-    margin: 3% auto auto;
+    margin: auto auto 5%;
   }
 
 
@@ -97,6 +97,53 @@ button {
     color: white;
     background-color: #EB611C;
     border-radius: 10px;
+
+  }
+
+}
+/***********************************************************tablette*****************************************************/
+
+@media screen and(min-width: 851px) and( max-width: 1024px)  {
+
+  .full-line-center {
+    width: 100%;
+    margin-top: 5%;
+  }
+  article:first-of-type > section {
+    width: 100%;
+    text-align: center;
+    margin: 1%;
+  }
+  input {
+    display: none;
+  }
+
+  article {
+    width: 90%;
+  }
+  article:first-of-type > section {
+    width: 33%;
+    display: inline;
+  }
+  article > section > img {
+    text-align: center;
+    margin-top: 5%;
+  }
+  article:nth-of-type(2) > section {
+    width: 90%;
+    padding: 0;
+    margin: 3% auto auto;
+  }
+
+
+  article > section {
+    width: 90%;
+    margin-top: 2%;
+  }
+  article:nth-of-type(2) > section > button {
+    width: 100%;
+
+    font-size: 1.5em;
 
   }
 }

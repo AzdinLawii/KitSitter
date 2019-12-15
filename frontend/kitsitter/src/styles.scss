@@ -55,6 +55,8 @@ body {
   width: 100%;
   margin: 0;
   font-size: 0;
+  background-color:  var(--mn-bgc);
+  
 }
 
 body > * {
@@ -151,6 +153,7 @@ nav > a:hover {
 main {
   display: inline-block;
   background-color: var(--mn-bgc);
+  margin:auto;
 }
 
 main > p {
