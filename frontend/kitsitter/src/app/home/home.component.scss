@@ -1,3 +1,20 @@
 h1{
   text-align: center;
 }
+
+article{
+  display:flex;
+  margin:auto;
+  width: 60%;
+}
+
+article>section{
+  width: 33%;
+  text-align: center;
+}
+article>section>img{
+  width:40%;
+  padding: 5%;
+  border-radius:100%;
+  background-color: #FFAA80;
+}
