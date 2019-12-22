@@ -1,0 +1,17 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  height: var(--ft-height);
+  min-height: var(--ft-min-height);
+  width: 100%;
+  background-color: var(--ft-bgc);
+  z-index: var(--z-index-frame);
+}
+footer::before{
+  content:'Copyright Kitsitter 2019';
+  display: block;
+  line-height: var(--ft-min-height);
+  width:100%;
+  text-align: center;
+  font-family : 'Chewy', cursive;
+}
