@@ -21,6 +21,10 @@
   --z-index-frame: 1;
 }
 
+input{
+  outline: none;
+}
+
 h1, a, h2, button {
   font-family: 'Chewy', cursive;
   color: #EB611C;

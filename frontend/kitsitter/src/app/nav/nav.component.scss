@@ -18,10 +18,14 @@
 
     & > a {
       display: block;
-      width: 100%;
+      height: calc(100vh/6);
       margin: 0;
       text-decoration: none;
       color: var(--mn-bgc);
+
+      & > img {
+        height: calc(100vh/18);
+      }
 
       &:hover {
         transform: scale(1.1);
