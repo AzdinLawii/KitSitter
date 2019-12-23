@@ -25,18 +25,26 @@ input{
   outline: none;
 }
 
-h1, a, h2, button {
+h1, a, h2, h3, button, label {
   font-family: 'Chewy', cursive;
   color: #EB611C;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   margin: 2%;
 }
 
 h2 {
   font-size: 2em;
+}
+
+h3{
+  font-size:1.5em;
+}
+
+label{
+  font-size:1.3em;
 }
 
 @media screen and (max-width: 851px) {

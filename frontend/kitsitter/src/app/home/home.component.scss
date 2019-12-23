@@ -1,154 +1,145 @@
-main{
-  margin-left: var(--nv-width);
+.full-line-center {
+  margin-bottom: 5%;
 }
 
-h1 {
+main {
+  margin-left: var(--nv-width);
+  text-align: center;
+}
+
+h1, h3 {
   text-align: center;
 }
 
 article {
   display: flex;
   margin: auto;
-  width: 60%;
-}
-
-article:first-of-type > section {
-  width: 33%;
-  text-align: center;
+  width: 90%;
 }
 
 article > section > img {
-  width: 40%;
   padding: 5%;
+  width: 50%;
   border-radius: 100%;
   background-color: #FFAA80;
 }
 
-input {
-  margin-left: 70%;
-  margin-top: 2%;
-  padding: 1%;
-  width: 20%;
-  border-radius: 10px;
-  border: 3px solid #4E901E;
+article > section {
+  margin: 5%;
+  width: 100%;
 }
 
-article:nth-of-type(2) > section {
-  width: 50%;
-  padding: 5%;
-  text-align: center;
+article:nth-of-type(3) > section > button, article:nth-of-type(3) > section:nth-of-type(2) > button {
+  width: 100%;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.5em;
+  padding: 2%;
+  border: none;
+}
+
+article:nth-of-type(3) > section > button {
+  background-color: #4E901E;
+  box-sizing: border-box;
+}
+
+article:nth-of-type(3) > section > button:hover {
+  border: 5px solid #4E901E;
+  background-color: white;
+  color: #4E901E;
+  transition: .4s;
+
+}
+
+article:nth-of-type(3) > section:nth-of-type(2) > button {
+  background-color: #EB611C;
+  box-sizing: border-box;
+}
+
+article:nth-of-type(3) > section:nth-of-type(2) > button:hover {
+  border: 5px solid #EB611C;
+  background-color: white;
+  color: #EB611C;
+  transition: .4s;
+
+}
+
+form {
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #FFAA80;
+}
+
+form > input {
+  width: 20%;
+  margin: 2%;
+  padding: 1%;
+  border: 5px solid #4E901E;
+  border-radius: 10px;
+}
+
+form > button {
+  width: 20%;
+  margin: 2%;
+  padding: 1%;
+  color: white;
+  background-color: #EB611C;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+form > button:hover {
+  border: 5px solid #EB611C;
+  background-color: white;
+  color: #EB611C;
+  transition: .4s;
+
 }
 
 button {
-  text-decoration: none;
-  font-size: 2em;
-  background: none;
-  border: none;
   cursor: pointer;
 }
 
 /*************************************************************mobile*****************************************************/
-@media screen and(max-width: 641px) {
+@media screen and(max-width: 500px) {
+
 
   .full-line-center {
     width: 100%;
-    margin-top: 5%;
-  }
-  article:first-of-type > section {
-    width: 100%;
-    text-align: center;
-    display: block;
-    margin-bottom:5%;
   }
 
-  input {
-    display: none;
-  }
-
+  
   article {
-    text-align: center;
     display: block;
     width: 100%;
-    margin-bottom: 20%;
-  }
-
-  article > section > img {
-    text-align: center;
-    margin-top: 5%;
-  }
-  article:nth-of-type(2) > section {
-    width: 90%;
-    padding: 0;
-    margin: auto auto 5%;
   }
 
 
-  article > section {
-    width: 90%;
-    margin-top: 2%;
-  }
-
-  article:nth-of-type(2) > section > button {
+  form > input {
     width: 100%;
-    color: white;
-    background-color: #4E901E;
-    border-radius: 10px;
-    font-size: 1.5em;
-    padding: 2%;
-  }
-  article > section:nth-of-type(2) > button {
-    width: 100%;
-    color: white;
-    background-color: #EB611C;
-    border-radius: 10px;
+    padding: 5%;
 
+  }
+  form > button {
+    width: 80%;
   }
 
 }
+
 /***********************************************************tablette*****************************************************/
 
-@media screen and(min-width: 851px) and( max-width: 1024px)  {
-
-  .full-line-center {
+@media screen and(min-width: 504px) and( max-width: 800px)  {
+  form > input {
     width: 100%;
-    margin-top: 5%;
-  }
-  article:first-of-type > section {
-    width: 100%;
-    text-align: center;
-    margin: 1%;
-  }
-  input {
-    display: none;
+    padding: 5%;
   }
 
-  article {
-    width: 90%;
-  }
-  article:first-of-type > section {
-    width: 33%;
-    display: inline;
-  }
-  article > section > img {
-    text-align: center;
-    margin-top: 5%;
-  }
-  article:nth-of-type(2) > section {
-    width: 90%;
-    padding: 0;
-    margin: 3% auto auto;
-  }
-
-
-  article > section {
-    width: 90%;
-    margin-top: 2%;
-  }
-  article:nth-of-type(2) > section > button {
-    width: 100%;
-
-    font-size: 1.5em;
-
+  form > button {
+    width: 80%;
   }
 }
+
 
