@@ -13,12 +13,16 @@
     font-family: 'Chewy', cursive;
 
     &.collapsed {
-      width: 0;
+      --nv-width : 0;
+      & > a:after{
+        content: '';
+      }
     }
 
     & > a {
       display: block;
       height: calc(100vh/6);
+      line-height: calc(100vh/6);
       margin: 0;
       text-decoration: none;
       color: var(--mn-bgc);
@@ -41,9 +45,10 @@
         z-index: 1;
         position: absolute;
         top: var(--nv-padding);
-        border-radius: 5%;
+        left: 85vw;
+        border-radius: 50%;
         background-color: var(--nv-bgc);
-        width: var(--nv-min-width);
+        width: 200px;
       }
     }
 
@@ -55,8 +60,7 @@
         text-align: center;
         transform: translateY(-5%);
       }
-      & > a.void::after,
-      & > a.apart::after {
+      & > a.void::after{
         content: '';
       }
     }
