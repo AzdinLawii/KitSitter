@@ -1,5 +1,7 @@
-main{
-  margin-left: var(--nv-width);
+@media screen and (min-width: 801px) {
+  main {
+    margin-left: var(--nv-width);
+  }
 }
 
 h1 {
