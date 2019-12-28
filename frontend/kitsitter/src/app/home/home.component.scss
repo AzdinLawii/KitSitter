@@ -5,7 +5,16 @@
 main {
   margin-left: var(--nv-width);
   text-align: center;
+
+  @media screen and (min-width: 801px) {
+    //nécessaire pour le fonctionnement de la nav rétractable
+    //nav.component.ts
+    &.collapsed {
+      margin-left: var(--nv-min-width);
+    }
+  }
 }
+
 
 h1, h3 {
   text-align: center;
