@@ -1,11 +1,223 @@
-.full-line-center {
-  margin-bottom: 5%;
-}
 
 main {
   margin-left: var(--nv-width);
   text-align: center;
 
+
+  & h1, h3 {
+    text-align: center;
+  }
+
+  & .full-line-center {
+    width: 50%;
+    margin-top: 5%;
+  }
+
+  & article {
+    display: flex;
+    margin: auto;
+    width: 90%;
+
+
+    & section > img {
+      padding: 5%;
+      width: 50%;
+      border-radius: 100%;
+      background-color: #FFAA80;
+    }
+
+    & section {
+      margin: 5%;
+      width: 100%;
+
+      & button {
+        width: 100%;
+        color: white;
+        border-radius: 10px;
+        font-size: 1.5em;
+        padding: 2%;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    & form {
+      width: 100%;
+      margin: auto;
+      border-radius: 10px;
+      background-color: #FFAA80;
+
+      & input {
+        width: 20%;
+        margin: 2%;
+        padding: 1%;
+        border: 5px solid #4E901E;
+        border-radius: 10px;
+      }
+
+      & button {
+        width: 20%;
+        margin: 2%;
+        padding: 1%;
+        color: white;
+        background-color: #EB611C;
+        font-size: 1.5em;
+        border: none;
+        border-radius: 10px;
+        box-sizing: border-box;
+      }
+
+      & button:hover {
+        border: 5px solid #EB611C;
+        background-color: white;
+        color: #EB611C;
+        transition: .4s;
+        cursor: pointer;
+      }
+    }
+  }
+
+  & article:nth-of-type(3) {
+    & section {
+      & button {
+        background-color: #4E901E;
+        box-sizing: border-box;
+      }
+
+      & button:hover {
+        border: 5px solid #4E901E;
+        background-color: white;
+        color: #4E901E;
+        transition: .4s;
+      }
+    }
+
+    & section:nth-of-type(2) {
+      & button {
+        background-color: #EB611C;
+        box-sizing: border-box;
+      }
+
+      & button:hover {
+        border: 5px solid #EB611C;
+        background-color: white;
+        color: #EB611C;
+        transition: .4s;
+      }
+    }
+
+  }
+
+  ///*************************************************************mobile*****************************************************/
+
+  @media screen and(max-width: 500px) {
+
+    margin-left: 0;
+
+    & .full-line-center {
+      width: 100%;
+    }
+
+    & article {
+      display: block;
+      width: 100%;
+
+
+      & section {
+        width: 80%;
+        margin: 5% auto auto;
+
+        & img {
+          width: 40%;
+        }
+
+      }
+
+      & form {
+        width: 90%;
+        padding-left: 2%;
+        padding-right: 2%;
+
+        & input {
+          width: 100%;
+          padding: 5%;
+          box-sizing: border-box;
+          margin: 0;
+
+        }
+
+        button {
+          width: 100%;
+          padding: 5%;
+          margin: 5% 0;
+        }
+
+        h3 {
+          padding-top: 5%;
+        }
+      }
+
+    }
+
+    & article:nth-of-type(3) {
+      & section:nth-of-type(2) {
+        margin-bottom: 5%;
+
+      }
+    }
+  }
+  ///***********************************************************tablette*****************************************************/
+
+  @media screen and(min-width: 501px) and(max-width: 800px) {
+
+    margin-left: 0;
+
+    & .full-line-center {
+      width: 80%;
+      margin-top: 20%;
+    }
+
+    & article {
+      display: flex;
+      margin: auto;
+      width: 100%;
+
+      & section {
+        margin: 5% 0;
+      }
+
+      form {
+        width: 90%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin: auto;
+
+        & input {
+          width: 100%;
+          padding: 5%;
+          box-sizing: border-box;
+          margin: 0;
+        }
+
+        & button {
+          width: 100%;
+          padding: 5%;
+          margin: 5% 0;
+        }
+
+        h3 {
+          padding-top: 5%;
+        }
+      }
+
+      & button {
+        margin: 0;
+      }
+    }
+  }
+
+
+  ///***********************************************************ordinateur*****************************************************/
   @media screen and (min-width: 801px) {
     //nécessaire pour le fonctionnement de la nav rétractable
     //nav.component.ts
@@ -14,188 +226,4 @@ main {
     }
   }
 }
-
-
-h1, h3 {
-  text-align: center;
-}
-
-article {
-  display: flex;
-  margin: auto;
-  width: 90%;
-}
-
-article > section > img {
-  padding: 5%;
-  width: 50%;
-  border-radius: 100%;
-  background-color: #FFAA80;
-}
-
-article > section {
-  margin: 5%;
-  width: 100%;
-}
-
-article:nth-of-type(3) > section > button, article:nth-of-type(3) > section:nth-of-type(2) > button {
-  width: 100%;
-  color: white;
-  border-radius: 10px;
-  font-size: 1.5em;
-  padding: 2%;
-  border: none;
-}
-
-article:nth-of-type(3) > section > button {
-  background-color: #4E901E;
-  box-sizing: border-box;
-}
-
-article:nth-of-type(3) > section > button:hover {
-  border: 5px solid #4E901E;
-  background-color: white;
-  color: #4E901E;
-  transition: .4s;
-
-}
-
-article:nth-of-type(3) > section:nth-of-type(2) > button {
-  background-color: #EB611C;
-  box-sizing: border-box;
-}
-
-article:nth-of-type(3) > section:nth-of-type(2) > button:hover {
-  border: 5px solid #EB611C;
-  background-color: white;
-  color: #EB611C;
-  transition: .4s;
-
-}
-
-form {
-  width: 100%;
-  margin: auto;
-  border-radius: 10px;
-  background-color: #FFAA80;
-}
-
-form > input {
-  width: 20%;
-  margin: 2%;
-  padding: 1%;
-  border: 5px solid #4E901E;
-  border-radius: 10px;
-}
-
-form > button {
-  width: 20%;
-  margin: 2%;
-  padding: 1%;
-  color: white;
-  background-color: #EB611C;
-  font-size: 1.5em;
-  border: none;
-  border-radius: 10px;
-  box-sizing: border-box;
-}
-
-form > button:hover {
-  border: 5px solid #EB611C;
-  background-color: white;
-  color: #EB611C;
-  transition: .4s;
-
-}
-
-button {
-  cursor: pointer;
-}
-
-/*************************************************************mobile*****************************************************/
-@media screen and(max-width: 500px) {
-  main {
-    margin: auto;
-    left: 0;
-    text-align: center;
-  }
-
-
-  .full-line-center {
-    width: 100%;
-  }
-
-
-  article {
-    display: block;
-    width: 100%;
-  }
-  article > section > img {
-
-    width: 40%;
-
-  }
-
-  form {
-    width: 90%;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-
-  form > input {
-    width: 100%;
-    padding: 5%;
-    box-sizing: border-box;
-    margin: 0;
-
-  }
-
-
-  form > button {
-    width: 100%;
-    padding: 5%;
-    margin: 5% 0;
-  }
-
-  h3 {
-    padding-top: 5%;
-  }
-
-  article > section {
-    width: 80%;
-    margin: 5% auto auto;
-  }
-
-  article:nth-of-type(3) > section:nth-of-type(2) > button {
-    margin-bottom: 5%;
-  }
-}
-
-/***********************************************************tablette*****************************************************/
-
-@media screen and(min-width: 501px) and(max-width: 800px) {
-  form > input {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 5%;
-  }
-
-
-  form > button {
-    width: 80%;
-  }
-  main {
-
-    margin: auto;
-    text-align: center;
-    width: 100%;
-  }
-
-  article {
-    display: flex;
-    margin: auto;
-    width: 100%;
-  }
-}
-
 
