@@ -21,7 +21,7 @@
   --z-index-frame: 1;
 }
 
-input{
+input {
   outline: none;
 }
 
@@ -39,12 +39,12 @@ h2 {
   font-size: 2em;
 }
 
-h3{
-  font-size:1.5em;
+h3 {
+  font-size: 1.5em;
 }
 
-label{
-  font-size:1.3em;
+label {
+  font-size: 1.3em;
 }
 
 @media screen and (max-width: 851px) {
@@ -55,6 +55,7 @@ label{
     font-size: 1.5em;
   }
 }
+
 p, span {
   font-family: Arial, sans-serif;
   font-size: 1em;

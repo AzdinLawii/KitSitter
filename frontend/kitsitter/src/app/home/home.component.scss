@@ -130,17 +130,45 @@ button {
     display: block;
     width: 100%;
   }
+  article > section > img {
 
+    width: 40%;
+
+  }
+
+  form {
+    width: 90%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 
   form > input {
     width: 100%;
     padding: 5%;
+    box-sizing: border-box;
+    margin: 0;
 
   }
+
+
   form > button {
-    width: 80%;
+    width: 100%;
+    padding: 5%;
+    margin: 5% 0;
   }
 
+  h3 {
+    padding-top: 5%;
+  }
+
+  article > section {
+    width: 80%;
+    margin: 5% auto auto;
+  }
+
+  article:nth-of-type(3) > section:nth-of-type(2) > button {
+    margin-bottom: 5%;
+  }
 }
 
 /***********************************************************tablette*****************************************************/
