@@ -25,7 +25,7 @@ import { SearchComponent } from './search/search.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [ AppComponent, HomeComponent , NavComponent, SearchComponent, FooterComponent]
+  bootstrap: [ AppComponent, HomeComponent , NavComponent, FooterComponent]
 })
 export class AppModule {
 }

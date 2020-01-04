@@ -21,6 +21,10 @@
   --z-index-frame: 1;
 }
 
+
+main{
+  margin-left: var(--nv-width);
+}
 input {
   outline: none;
 }
