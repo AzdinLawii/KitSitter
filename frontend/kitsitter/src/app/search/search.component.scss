@@ -55,6 +55,7 @@ main {
 
     & section {
       margin: 2%;
+      text-align: right;
 
       & img {
         width: 8%;
@@ -64,6 +65,7 @@ main {
 
     & section:nth-of-type(2) {
       width: 60%;
+      text-align: left;
     }
 
     & section:nth-of-type(3) {
@@ -78,6 +80,7 @@ main {
         border: none;
         border-radius: 10px;
         box-sizing: border-box;
+        cursor: pointer;
       }
 
       & button:first-of-type {
@@ -116,7 +119,7 @@ main {
 
         text-align: right;
         padding: 5%;
-        width: 60%;
+        width: 30%;
         border-radius: 100%;
         background-color: #FFAA80;
       }
@@ -129,7 +132,7 @@ main {
 
     & section:first-of-type {
       width: 100%;
-
+      text-align: center;
       & span {
         margin-left: 2%;
         margin-right: 2%;
@@ -169,6 +172,7 @@ main {
           button {
             width: 100%;
             padding: 5%;
+
           }
         }
       }
@@ -189,7 +193,10 @@ main {
 
       & section:nth-of-type(2) {
         width: 90%;
-        text-align: left;
+        text-align: center;
+        & p {
+          text-align: left;
+        }
 
         & h2, h3 {
           text-align: center;
@@ -208,9 +215,8 @@ main {
 
         & button {
           width: 90%;
+          margin: 2% 0 0;
         }
-
-
       }
 
       & section:first-of-type {
@@ -223,15 +229,16 @@ main {
         }
       }
     }
-    }
-    & section:first-of-type {
-      width: 100%;
+    & article:nth-of-type(10) {
+      padding-bottom: 5%;
 
-      & span {
-        margin-bottom: 5%;
+      & section:first-of-type {
+        width: 100%;
       }
     }
-
   }
+
+
+}
 
 
