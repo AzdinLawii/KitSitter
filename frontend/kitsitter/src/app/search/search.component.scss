@@ -158,7 +158,7 @@ main {
 
       & section {
 
-        & form {
+        & form:first-of-type {
           display: inline-block;
           width: 90%;
           text-align: center;
@@ -305,11 +305,8 @@ main {
       & section:nth-of-type(3) {
         width: 90%;
         margin: 5% auto;
-        display: inline-block;
+        display: flex;
 
-        & button {
-          margin: 2% 0 0;
-        }
       }
 
       & section:first-of-type {
