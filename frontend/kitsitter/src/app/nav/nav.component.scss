@@ -106,21 +106,24 @@
 @media screen and (max-width: 500px) {
   :host {
     & > nav {
-      --nv-height: 50px;
+      --nv-height: 70px;
       display: block;
-      width: 50px;
+      width: 70px;
       padding: 0 var(--nv-padding);
+      margin-left: -5px;
+      border-radius: 10%;
 
       & > a:after {
         content: attr(title);
         display: inline-block;
         width: 150px;
-        line-height: 50px;
+        line-height: 60px;
         text-align: center;
-        transform: translateX(50px);
+        transform: translateX(70px);
         background-color: var(--nv-bgc);
       }
-      & > a#menu-button:after{
+
+      & > a#menu-button:after {
         content: "";
       }
 
@@ -128,23 +131,36 @@
       & > a {
         position: relative;
         display: none;
-        height: 50px;
+        height: 60px;
         text-decoration: none;
         color: var(--mn-bgc);
         background-color: var(--nv-bgc);
 
-        &#menu-button{
+        &:nth-of-type(2):after {
+          border-radius: 0 10% 0 0;
+        }
+        &:last-of-type {
+          border-radius: 0 0 0 10%;
+
+          &:after {
+            border-radius: 0 0 10% 0;
+          }
+        }
+
+        &#menu-button {
           display: block;
         }
 
         & > img {
           position: absolute;
-          height: calc(100vh / 18);
+          height: calc(100vh / 20);
           top: 50%;
           left: 50%;
           transform: translateY(-50%) translateX(-50%);
+          margin: 5px;
         }
       }
+
       &.expanded > a {
         display: block;
       }
@@ -159,6 +175,7 @@
     width: 80px;
     text-align: center;
     transform: translateY(-5%);
+    margin: 0;
   }
   nav > a.apart:after {
     content: attr(title);
