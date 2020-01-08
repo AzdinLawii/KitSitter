@@ -5,6 +5,7 @@ import {HomeComponent} from './home/home.component';
 import {CalendarComponent} from './calendar/calendar.component';
 
 const routes: Routes = [
+  {path: '' , component: HomeComponent},
   {path: 'home' , component: HomeComponent},
   {path: 'search', component: SearchComponent },
   {path: 'calendar' , component: CalendarComponent},
