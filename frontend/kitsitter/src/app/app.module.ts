@@ -9,6 +9,7 @@ import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import { SitterProfileComponent } from './sitter-profile/sitter-profile.component';
 import { SearchComponent } from './search/search.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +19,15 @@ import { SearchComponent } from './search/search.component';
     HeaderComponent,
     FooterComponent,
     SitterProfileComponent,
-    SearchComponent
+    SearchComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [ AppComponent, HomeComponent ,   NavComponent , FooterComponent]
+  bootstrap: [ AppComponent ,   NavComponent , FooterComponent]
 })
 export class AppModule {
 }

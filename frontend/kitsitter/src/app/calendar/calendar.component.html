@@ -1,0 +1,8 @@
+<h2>{{MONTHS[NOW.getMonth()] + ' ' + CURRENT_YEAR}}</h2>
+<section>
+  <h3 *ngFor="let day of DAYS_OF_WEEK">{{day}}</h3>
+</section>
+<span *ngFor="let span of [].constructor(countSpace())"></span>
+<time *ngFor="let span of [].constructor(lastDayOfMonth().getDate());let i=index" [class.now]="(i+1)===NOW.getDate()">{{i+1}}</time>
+<!--new Array(6) ===> [ , , , , , ]-->
+<!--[].constructor(6) ===> [ , , , , , ]-->

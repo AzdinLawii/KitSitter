@@ -1,0 +1,72 @@
+:host {
+  width: 80%;
+  margin: auto;
+  font-size: 0;
+
+  & > h2 {
+    margin: 0;
+    line-height: 2;
+    background-color: #135B9C;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #FFF;
+    font-weight: normal;
+  }
+
+  & > section > h3,
+  & > time {
+    box-sizing: border-box;
+    display: inline-block;
+    width: calc((100% - 6 * 10px) / 7);
+    margin-right: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #135B9C;
+
+  }
+
+  & > span {
+    display: inline-block;
+    width: calc((100% - 6 * 10px) / 7);
+    margin-right: 10px;
+  }
+
+  & > section > h3:nth-of-type(7),
+  & > time:nth-child(7n+9) {
+    margin-right: 0;
+  }
+
+
+  & > time {
+    vertical-align: top;
+    height: 100px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    cursor: pointer;
+
+    &:nth-child(7n+8),
+    &:nth-child(7n+9) {
+      background-color: #383838;
+      color: #FFF;
+    }
+
+    &.now {
+      background-color: #F00;
+      color: #FFF;
+    }
+
+    &:nth-child(n).holy {
+      background-color: purple;
+      color: #FFF;
+    }
+
+    &:nth-child(n).selected {
+      background-color: #135B9C;
+      color: #FFF;
+    }
+  }
+
+
+}
+

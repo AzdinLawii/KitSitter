@@ -174,11 +174,11 @@
     display: inline-block;
     width: 80px;
     text-align: center;
-    transform: translateY(-5%);
+    transform: translateY(-12%);
     margin: 0;
   }
   nav > a.apart:after {
-    content: attr(title);
+    content: '';
   }
 }
 
