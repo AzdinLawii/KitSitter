@@ -24,6 +24,6 @@ export class SearchComponent implements OnInit {
   open_menu() {
     const advenced = Array.from(document.getElementsByClassName('advenced'))[0];
     console.log(advenced);
-    advenced["style"].display = "block";
+    advenced["style"].display = "inline";
   }
 }
