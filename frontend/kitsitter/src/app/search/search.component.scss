@@ -15,15 +15,17 @@ main {
       width: 90%;
       margin: auto;
 
-      .advenced{
+      .advenced {
         display: none;
       }
+
       & input, select {
         margin-left: 2%;
         margin-right: 2%;
         padding: 1%;
         border: 5px solid #4E901E;
         border-radius: 10px;
+
       }
 
 
@@ -157,25 +159,47 @@ main {
 
     & article:first-of-type {
       width: 100%;
-      margin-bottom: 5%;
+
 
       & section {
+        box-sizing: border-box;
+        width: 90%;
+        margin: auto;
 
         & form:first-of-type {
-          display: inline-block;
-          width: 90%;
+          display: block;
+          width: 80%;
           text-align: center;
           padding-left: 3%;
           padding-right: 3%;
+          padding-top: 3%;
 
-          & input {
+
+          & select {
+            width: 100%;
             padding: 2%;
-            width: 10%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+          }
+
+          input {
+            margin-top: 5%;
+            margin-bottom: 5%;
+          }
+
+          & label:nth-of-type(3) {
+
+            input {
+              width: 100%;
+              padding: 2%;
+            }
           }
 
           button {
             width: 100%;
             padding: 5%;
+            margin-top: 5%;
+            margin-bottom: 5%;
 
           }
         }
@@ -257,9 +281,16 @@ main {
 
       & section {
 
-        & form {
 
-          width: 90%;
+        & form {
+          width: 80%;
+
+          & select {
+            width: 100%;
+            padding: 2%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+          }
 
           & input {
             padding: 2%;

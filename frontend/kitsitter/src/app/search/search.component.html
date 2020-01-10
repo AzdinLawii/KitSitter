@@ -4,8 +4,8 @@
   <article>
     <section>
       <form method="post">
-        <label (click)="closemenu()">Tous <input type="radio" checked="checked"></label>
-        <label>trier par <input type="radio" (click)="open_menu()"> </label>
+        <label (click)="closemenu()" >Tous <input  name ="search" type="radio" checked="checked" class="radio"></label>
+        <label >trier par <input  name ="search" type="radio" (click)="open_menu()"  class="radio"> </label>
         <label class="advenced">  <select>
           <option>Expérience</option>
         </select> disponible du <input type="date"> au <input type="date"></label>
