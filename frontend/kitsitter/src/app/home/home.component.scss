@@ -9,7 +9,7 @@ main {
 
   & .full-line-center {
     width: 30%;
-    margin-top: 2%;
+    margin-top: 20px;
   }
 
   & article {
@@ -20,8 +20,8 @@ main {
 
     & section {
 
-      & img{
-        padding: 5%;
+      & img {
+        padding: 20px;
         width: 40%;
         border-radius: 100%;
         background-color: #FFAA80;
@@ -29,7 +29,7 @@ main {
     }
 
     & section {
-      margin: 5%;
+      margin: 50px;
       width: 100%;
 
       & button {
@@ -37,7 +37,7 @@ main {
         color: white;
         border-radius: 10px;
         font-size: 1.5em;
-        padding: 2%;
+        padding: 10px;
         border: none;
         cursor: pointer;
       }
@@ -49,24 +49,26 @@ main {
       border-radius: 10px;
       background-color: #FFAA80;
 
+
       & input {
         width: 20%;
-        margin: 2%;
-        padding: 1%;
+        margin: 20px;
+        padding: 20px;
         border: 5px solid #4E901E;
         border-radius: 10px;
       }
 
       & button {
         width: 20%;
-        margin: 2%;
-        padding: 1%;
+        margin: 20px;
+        padding: 10px;
         color: white;
         background-color: #EB611C;
         font-size: 1.5em;
         border: none;
         border-radius: 10px;
         box-sizing: border-box;
+
       }
 
       & button:hover {
@@ -84,7 +86,7 @@ main {
       & button {
         background-color: #4E901E;
         box-sizing: border-box;
-        padding:5%;
+        padding: 20px;
       }
 
       & button:hover {
@@ -99,7 +101,8 @@ main {
       & button {
         background-color: #EB611C;
         box-sizing: border-box;
-        padding:5%;
+        padding: 20px;
+        margin-bottom: 60px;
       }
 
       & button:hover {
@@ -129,7 +132,7 @@ main {
 
       & section {
         width: 80%;
-        margin: 5% auto auto;
+        margin: 20px auto auto;
 
         & img {
           width: 40%;
@@ -139,12 +142,12 @@ main {
 
       & form {
         width: 90%;
-        padding-left: 2%;
-        padding-right: 2%;
+        padding-left: 20px;
+        padding-right: 20px;
 
         & input {
           width: 100%;
-          padding: 5%;
+          padding: 10px;
           box-sizing: border-box;
           margin: 0;
 
@@ -152,22 +155,23 @@ main {
 
         & button {
           width: 100%;
-          padding: 5%;
-          margin: 5% 0;
+          padding: 10px;
+          margin: 20px 0;
         }
 
-       & h3 {
-          padding-top: 5%;
+        & h3 {
+          padding-top: 10px;
         }
       }
 
     }
 
     & article:nth-of-type(3) {
-      & section:nth-of-type(2) {
-        margin-bottom: 10%;
 
-      }
+      & section:nth-of-type(2) {
+          margin-bottom: 20px;
+
+        }
     }
   }
   ///***********************************************************tablette*****************************************************/
@@ -178,7 +182,7 @@ main {
 
     & .full-line-center {
       width: 80%;
-      margin-top: 20%;
+      margin-top: 120px;
     }
 
     & article {
@@ -187,31 +191,29 @@ main {
       width: 100%;
 
       & section {
-        margin: 5% 0;
+        margin: 20px 0;
       }
 
       form {
         width: 90%;
-        padding-left: 2%;
-        padding-right: 2%;
-        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 20px auto;
 
         & input {
           width: 100%;
-          padding: 5%;
+          padding: 10px;
           box-sizing: border-box;
           margin: 0;
         }
 
         & button {
           width: 100%;
-          padding: 5%;
-          margin: 5% 0;
+          padding: 10px;
+          margin: 20px 0;
         }
 
-        h3 {
-          padding-top: 5%;
-        }
+   
       }
 
 
@@ -219,9 +221,13 @@ main {
     article:nth-of-type(3) {
 
       & section {
-        margin: 5%;
+        margin: 10px;
 
       }
+      & section:nth-of-type(2) {
+          margin-bottom: 60px;
+
+        }
     }
   }
 
