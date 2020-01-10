@@ -52,6 +52,7 @@ export class CalendarComponent implements OnInit {
       day: 25
     }
   ];
+  status: boolean;
 
   constructor() {
     this.NOW = new Date();
@@ -90,19 +91,61 @@ export class CalendarComponent implements OnInit {
       this.NOW.getFullYear(),
       this.NOW.getMonth(),
       1
-    );//récupération du 1er jour du mois
+    ); // récupération du 1er jour du mois
 
     // FIRST_DAY_OF_MONTH.getDay() 0 <- 0 dimanche 1 lundi, etc.
     return (FIRST_DAY_OF_MONTH.getDay() + 6) % 7;
   }
+
+
+  previousMonth() {
+
+  }
+
+  nextMonth() {
+
+  }
+
+  selectDay($event) {
+    const selectedTimes = document.getElementsByClassName('selected');
+    if (selectedTimes.length < 2) {
+      $event.target.classList.contains('selected') ?
+        $event.target.classList.remove('selected')
+        : $event.target.classList.add('selected');
+    } else {
+      $event.target.classList.remove('selected');
+      this.clearPropagate();
+    }
+    if (selectedTimes.length === 2) {
+      this.propagateSelection(selectedTimes[0], selectedTimes[1]);
+    }
+  }
+
+  propagateSelection(firstSelect, secondSelect) {
+    const Times = Array.from(document.getElementsByTagName('time'));
+
+    console.log(firstSelect.innerText, secondSelect.innerText);
+    // tslint:disable-next-line:radix
+    for (let i = 0; i < ((parseInt(secondSelect.innerText) - parseInt(firstSelect.innerText)) - 1); i++) {
+      // tslint:disable-next-line:radix
+      Times[parseInt(firstSelect.innerText) + i].classList.add('propagated');
+    }
+  }
+
+  private clearPropagate() {
+    const Propagated = Array.from(document.getElementsByClassName('propagated'));
+    for (let i = 0; i < Propagated.length; i++) {
+      Propagated[i].classList.remove('propagated');
+    }
+  }
 }
 
-type calendar_date = {
+type   calendar_date = {
   date: string,
   title: string
-}
-type holy_date = {
+};
+type  holy_date = {
   title: string,
   month: number,
   day: number
-}
+};
