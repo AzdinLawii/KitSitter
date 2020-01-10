@@ -4,11 +4,11 @@
   <article>
     <section>
       <form method="post">
-        <label>Tous <input type="radio"></label>
-        <label>trier par <select>
+        <label (click)="closemenu()">Tous <input type="radio" checked="checked"></label>
+        <label>trier par <input type="radio" (click)="open_menu()"> </label>
+        <label class="advenced">  <select>
           <option>Expérience</option>
-        </select></label>
-        <label>disponible du <input type="date"> au <input type="date"></label>
+        </select> disponible du <input type="date"> au <input type="date"></label>
         <button type="submit">valider</button>
       </form>
     </section>
