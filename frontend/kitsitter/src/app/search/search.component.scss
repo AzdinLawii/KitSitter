@@ -80,7 +80,7 @@ main {
       width: 20%;
 
       & button {
-    
+
 
         width: 20%;
         margin: 2%;
@@ -141,7 +141,7 @@ main {
   & article:nth-of-type(10) {
     margin: auto;
     text-align: center;
-
+    margin-bottom :10%;
     & section:first-of-type {
       width: 100%;
       text-align: center;
@@ -149,6 +149,7 @@ main {
       & span {
         margin-left: 2%;
         margin-right: 2%;
+
       }
     }
   }
