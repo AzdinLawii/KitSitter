@@ -14,6 +14,7 @@ import {CalendarComponent} from './calendar/calendar.component';
 import {registerLocaleData} from '@angular/common';
 import LocalFr from '@angular/common/locales/fr';
 import LocalFrExtra from '@angular/common/locales/extra/fr';
+import { CreateinfosComponent } from './createinfos/createinfos.component';
 
 registerLocaleData(LocalFr, 'fr-FR', LocalFrExtra);
 
@@ -26,7 +27,8 @@ registerLocaleData(LocalFr, 'fr-FR', LocalFrExtra);
     FooterComponent,
     SitterProfileComponent,
     SearchComponent,
-    CalendarComponent
+    CalendarComponent,
+    CreateinfosComponent
   ],
   imports: [
     BrowserModule,

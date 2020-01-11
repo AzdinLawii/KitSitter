@@ -1,0 +1,118 @@
+main {
+  & h1 {
+    text-align: center;
+  }
+
+
+  & form {
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+
+    & article:nth-of-type(1n +1) {
+      width: 100%;
+      text-align: center;
+      border-top: 5px solid #EB611C;
+      padding-top: 20px;
+
+      & section {
+        width: 60%;
+        margin: auto;
+
+        & img {
+          padding: 20px;
+          border-radius: 100%;
+          background-color: #FFAA80;
+          width: 10%;
+        }
+
+      }
+
+      & section:nth-of-type(2) {
+        margin-top: 20px;
+
+        & input {
+          padding: 10px;
+          border: 5px solid #EB611C;
+          border-radius: 10px;
+          margin-top: 20px;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+
+        & input:first-of-type, input:nth-of-type(2) {
+          width: 45%;
+        }
+
+        & input:nth-of-type(3) {
+          width: 25%;
+        }
+
+        & input:nth-of-type(4) {
+          width: 65%;
+        }
+
+        & input:nth-of-type(5) {
+          width: 65%;
+        }
+
+        & input:nth-of-type(6) {
+          width: 25%;
+        }
+      }
+    }
+
+    & article:nth-of-type(2) {
+      margin-top: 50px;
+      text-align: center;
+      display: block;
+
+      & section {
+        width: 60%;
+
+        input{
+          width: 100%;
+          padding: 10px;
+          border: 5px solid #EB611C;
+          border-radius: 10px;
+          margin: 20px 20px 20px;
+        }
+        & textarea {
+          width: 100%;
+          height: 450px;
+          padding: 10px;
+          border: 5px solid #EB611C;
+          border-radius: 10px;
+          margin: 20px 20px 20px;
+        }
+
+        & button {
+          width: 30%;
+          margin: 10px;
+          padding: 20px;
+          color: white;
+          font-size: 1.5em;
+          border: none;
+          border-radius: 10px;
+          box-sizing: border-box;
+          cursor: pointer;
+          background-color: #EB611C;
+        }
+
+        & button:hover {
+          border: 5px solid #EB611C;
+          background-color: white;
+          color: #EB611C;
+          transition: .4s;
+        }
+
+      }
+    }
+
+    & article:nth-of-type(3){
+      margin-top: 50px;
+    }
+  }
+}
+
+

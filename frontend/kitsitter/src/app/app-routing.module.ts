@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import {SearchComponent} from './search/search.component';
 import {HomeComponent} from './home/home.component';
 import {CalendarComponent} from './calendar/calendar.component';
+import {CreateinfosComponent} from './createinfos/createinfos.component';
 
 const routes: Routes = [
   {path: '' , component: HomeComponent},
   {path: 'home' , component: HomeComponent},
   {path: 'search', component: SearchComponent },
   {path: 'calendar' , component: CalendarComponent},
+  {path: 'createinfos' , component: CreateinfosComponent},
 ];
 
 @NgModule({
@@ -17,4 +19,4 @@ const routes: Routes = [
   providers: []
 })
 export class AppRoutingModule { }
-export const routingComponent = [SearchComponent, HomeComponent];
+export const routingComponent = [SearchComponent, HomeComponent, CreateinfosComponent];

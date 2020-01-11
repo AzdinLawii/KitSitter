@@ -25,10 +25,12 @@ main {
         padding: 10px;
         border: 5px solid #4E901E;
         border-radius: 10px;
-        margin: auto;
-        margin: 10px;
+
       }
 
+      & .radio {
+        margin: 10px;
+      }
 
       & button {
         width: 10%;
@@ -80,8 +82,6 @@ main {
       width: 20%;
 
       & button {
-
-
         width: 20%;
         margin: 10px;
         padding: 20px;
@@ -187,7 +187,7 @@ main {
             margin-bottom: 10px;
           }
 
-          input {
+          & input {
             padding: 10px;
             margin-top: 10px;
             margin-bottom: 10px;
@@ -196,13 +196,13 @@ main {
 
           & label:nth-of-type(3) {
 
-            input {
+            & input {
               padding: 10px;
               width: 90%;
             }
           }
 
-          button {
+          & button {
             width: 100%;
             padding: 20px;
             margin-top: 10px;
@@ -307,10 +307,11 @@ main {
             padding: 20px;
           }
 
-          button {
+          & button {
             width: 50%;
             padding: 20px;
-
+            margin-top: 10px;
+            margin-bottom: 10px;
           }
         }
       }
