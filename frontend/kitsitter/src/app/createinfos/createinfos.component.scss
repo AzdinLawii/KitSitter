@@ -1,4 +1,5 @@
 main {
+
   & h1 {
     text-align: center;
   }
@@ -8,6 +9,13 @@ main {
     padding: 10px;
     width: 100%;
     margin: auto;
+
+    input {
+      padding: 10px;
+      border: 5px solid #EB611C;
+      border-radius: 10px;
+      margin: 20px 20px 20px;
+    }
 
     & article:nth-of-type(1n +1) {
       width: 100%;
@@ -32,33 +40,22 @@ main {
         margin-top: 20px;
 
         & input {
-          padding: 10px;
-          border: 5px solid #EB611C;
-          border-radius: 10px;
           margin-top: 20px;
-          margin-right: 10px;
-          margin-left: 10px;
+
         }
 
         & input:first-of-type, input:nth-of-type(2) {
           width: 45%;
         }
 
-        & input:nth-of-type(3) {
+        & input:nth-of-type(3), & input:nth-of-type(6) {
           width: 25%;
         }
 
-        & input:nth-of-type(4) {
+        & input:nth-of-type(4), & input:nth-of-type(5) {
           width: 65%;
         }
 
-        & input:nth-of-type(5) {
-          width: 65%;
-        }
-
-        & input:nth-of-type(6) {
-          width: 25%;
-        }
       }
     }
 
@@ -66,17 +63,16 @@ main {
       margin-top: 50px;
       text-align: center;
       display: block;
+      width: 100%;
 
       & section {
         width: 60%;
 
-        input{
+        input {
+
           width: 100%;
-          padding: 10px;
-          border: 5px solid #EB611C;
-          border-radius: 10px;
-          margin: 20px 20px 20px;
         }
+
         & textarea {
           width: 100%;
           height: 450px;
@@ -109,10 +105,197 @@ main {
       }
     }
 
-    & article:nth-of-type(3){
+    & article:nth-of-type(3) {
       margin-top: 50px;
+      margin-bottom: 100px;
+
+      & section {
+        width: 60%;
+
+        select {
+          width: 45%;
+          padding: 10px;
+          border: 5px solid #EB611C;
+          border-radius: 10px;
+          margin-top: 20px;
+
+        }
+
+        input:first-of-type {
+          width: 45%;
+          margin-top: 20px;
+
+        }
+
+        input:nth-of-type(2) {
+          width: 45%;
+          margin-top: 20px;
+
+        }
+
+        input:nth-of-type(3) {
+          width: 45%;
+          margin-top: 20px;
+
+        }
+
+
+        & textarea {
+          width: 100%;
+          height: 450px;
+          padding: 10px;
+          border: 5px solid #EB611C;
+          border-radius: 10px;
+          margin: 20px 20px 20px;
+
+        }
+
+
+        & button {
+          display: block;
+          width: 30%;
+          margin: auto;
+          padding: 20px;
+          color: white;
+          font-size: 1.5em;
+          border: none;
+          border-radius: 10px;
+          box-sizing: border-box;
+          cursor: pointer;
+          background-color: #EB611C;
+        }
+
+        & button:hover {
+          border: 5px solid #EB611C;
+          background-color: white;
+          color: #EB611C;
+          transition: .4s;
+        }
+
+        & button:nth-of-type(2) {
+          margin-top: 20px;
+          width: 50%;
+          background-color: #4E901E;
+        }
+
+        & button:nth-of-type(2):hover {
+          border: 5px solid #4E901E;
+          background-color: white;
+          color: #4E901E;
+          transition: .4s;
+        }
+      }
+    }
+  }
+
+
+  /*************************************************************mobile*****************************************************/
+
+  @media screen and(max-width: 500px) {
+    margin-left: 0;
+    h1{
+      margin-top: 60px;
+    }
+
+    & form {
+      width: 90%;
+
+
+      & input {
+        margin-left:0;
+        margin-right:0;
+
+      }
+
+      & article:nth-of-type(1n +1) {
+
+        input, select, textarea, button {
+          margin: 0;
+        }
+
+        & section {
+          width: 90%;
+
+
+          & img {
+            width: 30%;
+            margin-bottom: 10px;
+          }
+
+        }
+
+        & section:nth-of-type(2) {
+          & input:first-of-type, input:nth-of-type(2), input:nth-of-type(3), input:nth-of-type(4), input:nth-of-type(5), input:nth-of-type(6) {
+            width: 90%;
+
+          }
+
+        }
+
+
+      }
+
+      & article:nth-of-type(2) {
+
+        & section {
+          width: 90%;
+
+          input {
+            width: 90%;
+          }
+
+          & textarea {
+            width: 90%;
+            height: 200px;
+            margin-left:0;
+            margin-right:0;
+          }
+
+          & button {
+            width: 100%;
+            margin-left:0;
+            margin-right:0;
+          }
+        }
+      }
+
+      & article:nth-of-type(3) {
+
+
+        & section {
+          width: 90%;
+
+          select {
+            width: 90%;
+
+          }
+
+          input:first-of-type, input:nth-of-type(2), input:nth-of-type(3), textarea {
+            width: 90%;
+          }
+
+          & textarea {
+            height: 200px;
+            margin-left:0;
+            margin-right:0;
+          }
+
+
+          & button {
+            width: 100%;
+            margin-top:20px;
+            margin-left:0;
+            margin-right:0;
+          }
+
+
+          & button:nth-of-type(2) {
+            width: 100%;
+
+          }
+
+        }
+      }
     }
   }
 }
-
-

@@ -1,6 +1,7 @@
 <main>
-  <h1>Création du profil</h1>
+
   <form>
+    <h1>Création du profil</h1>
     <article>
 
       <section>
@@ -21,15 +22,30 @@
       <h2>Je suis kitsitter</h2>
       <section>
         <input type="text" placeholder="nombre d'année d'expérience">
-      <textarea placeholder="présentez-vous"></textarea>
-      <textarea placeholder="décrivez votre expérience"></textarea>
-      <button>Ajouter une expérience</button>
+        <textarea placeholder="présentez-vous"></textarea>
+        <textarea placeholder="décrivez votre expérience"></textarea>
+        <button>Ajouter une expérience</button>
       </section>
     </article>
 
     <article>
+      <h2>Mes animaux</h2>
       <section>
-        <h2>Mes animaux</h2>
+        <select>
+          <option>chien</option>
+          <option>chat</option>
+          <option>oiseaux</option>
+          <option>renard</option>
+          <option>pokemon</option>
+          <option>lezard</option>
+        </select>
+        <input type="text" placeholder="nom de l'animal">
+        <input type="text" placeholder="race">
+        <input type="text" placeholder="age">
+        <textarea placeholder="caractère de l'animal"></textarea>
+       <label> <input input type="file" name="file" class="inputfile">ajouter une photo de votre animal</label>
+        <button>Ajouter un animal</button>
+        <button type="submit">Valider le profil</button>
       </section>
     </article>
   </form>
