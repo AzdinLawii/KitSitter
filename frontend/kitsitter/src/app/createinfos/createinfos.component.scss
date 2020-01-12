@@ -46,8 +46,8 @@ main {
 
         & input {
           margin-top: 20px;
-          margin-left: 0;
-          margin-right: 0;
+          margin-left:10px;
+          margin-right: 10px;
         }
 
         & input:first-of-type, input:nth-of-type(2) {
@@ -76,6 +76,7 @@ main {
 
         input {
           width: 100%;
+
         }
 
         & textarea {
