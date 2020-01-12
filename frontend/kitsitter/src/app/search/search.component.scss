@@ -4,420 +4,386 @@ main {
     text-align: center;
   }
 
-
-  & form {
-    padding: 10px;
+  & article:first-of-type {
     width: 90%;
     margin: auto;
+    border-radius: 10px;
+    background-color: #FFAA80;
 
-    input {
-      border: 5px solid #EB611C;
-      border-radius: 10px;
-      margin: 20px 20px 20px;
-      padding: 20px;
 
-    }
-
-    & article:nth-of-type(1n +1) {
-      width: 100%;
-      text-align: center;
-      border-top: 5px solid #EB611C;
-      padding-top: 20px;
+    & form {
+      padding: 10px;
+      width: 80%;
       margin: auto;
 
 
-      & section {
-        width: 60%;
-        margin: auto;
+      .advenced {
+        display: none;
+      }
 
-        & img {
-          padding: 20px;
-          border-radius: 100%;
-          background-color: #FFAA80;
-          width: 10%;
-          display: block;
-          margin: 10px auto;
-        }
+      & input, select {
+        padding: 20px;
+        border: 5px solid #4E901E;
+        border-radius: 10px;
 
       }
 
-      & section:nth-of-type(2) {
-        margin-top: 20px;
-
-        & input {
-          margin-top: 20px;
-          margin-left: 0;
-          margin-right: 0;
-        }
-
-        & input:first-of-type, input:nth-of-type(2) {
-          width: 43%;
-        }
-
-        & input:nth-of-type(3), & input:nth-of-type(6) {
-          width: 23%;
-        }
-
-        & input:nth-of-type(4), & input:nth-of-type(5) {
-          width: 65%;
-        }
-
+      & .radio {
+        margin: 10px;
       }
-    }
 
-    & article:nth-of-type(2) {
-      margin-top: 50px;
-      text-align: center;
-      display: block;
-
-
-      & section {
-        width: 60%;
-
-        input {
-          width: 100%;
-        }
-
-        & textarea {
-          width: 100%;
-          height: 450px;
-          padding: 20px;
-          border: 5px solid #EB611C;
-          border-radius: 10px;
-          margin: 20px 20px 20px;
-        }
-
-        & button {
-          width: 30%;
-          margin: 10px;
-          padding: 20px;
-          color: white;
-          font-size: 1.5em;
-          border: none;
-          border-radius: 10px;
-          box-sizing: border-box;
-          cursor: pointer;
-          background-color: #EB611C;
-        }
-
-        & button:hover {
-          border: 5px solid #EB611C;
-          background-color: white;
-          color: #EB611C;
-          transition: .4s;
-        }
-
+      & button {
+        width: 10%;
+        padding: 20px;
+        color: white;
+        background-color: #EB611C;
+        font-size: 1.5em;
+        border: none;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin: auto auto auto 10px;
       }
-    }
 
-    & article:nth-of-type(3) {
-      margin-top: 50px;
-      margin-bottom: 100px;
-
-      & section {
-        width: 60%;
-
-        select {
-          width: 45%;
-          padding: 20px;
-          border: 5px solid #EB611C;
-          border-radius: 10px;
-          margin-top: 20px;
-
-        }
-
-        input:first-of-type {
-          width: 44%;
-          margin-top: 20px;
-
-        }
-
-        input:nth-of-type(2) {
-          width: 44%;
-          margin-top: 20px;
-
-        }
-
-        input:nth-of-type(3) {
-          width: 44%;
-          margin-top: 20px;
-
-        }
-
-
-        & textarea {
-          width: 100%;
-          height: 450px;
-          padding: 20px;
-          border: 5px solid #EB611C;
-          border-radius: 10px;
-          margin: 20px 20px 20px;
-
-        }
-
-
-        & button {
-          display: block;
-          width: 30%;
-          margin: auto;
-          padding: 20px;
-          color: white;
-          font-size: 1.5em;
-          border: none;
-          border-radius: 10px;
-          box-sizing: border-box;
-          cursor: pointer;
-          background-color: #EB611C;
-        }
-
-        & button:hover {
-          border: 5px solid #EB611C;
-          background-color: white;
-          color: #EB611C;
-          transition: .4s;
-        }
-
-        & button:nth-of-type(2) {
-          margin-top: 20px;
-          width: 50%;
-          background-color: #4E901E;
-        }
-
-        & button:nth-of-type(2):hover {
-          border: 5px solid #4E901E;
-          background-color: white;
-          color: #4E901E;
-          transition: .4s;
-        }
+      & button:hover {
+        border: 5px solid #EB611C;
+        background-color: white;
+        color: #EB611C;
+        transition: .4s;
+        cursor: pointer;
       }
     }
   }
 
+  & article:nth-of-type(1n +2) {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    border-bottom: 5px solid #EB611C;
+
+
+    & section {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: right;
+
+      & img {
+        width: 5%;
+
+      }
+    }
+
+
+    & section:nth-of-type(2) {
+      width: 60%;
+      text-align: left;
+    }
+
+    & section:nth-of-type(3) {
+      width: 20%;
+
+      & button {
+        width: 20%;
+        margin: 10px;
+        padding: 20px;
+        color: white;
+        font-size: 1.5em;
+        border: none;
+        border-radius: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+
+      & button:first-of-type {
+        background-color: #4E901E;
+        box-sizing: border-box;
+        padding: 30px;
+        width: 100%;
+      }
+
+      & button:first-of-type:hover {
+        border: 5px solid #4E901E;
+        background-color: white;
+        color: #4E901E;
+        transition: .4s;
+      }
+
+      & button:nth-of-type(2) {
+        background-color: #EB611C;
+        box-sizing: border-box;
+        padding: 30px;
+        width: 100%;
+
+      }
+
+      & button:nth-of-type(2):hover {
+        border: 5px solid #EB611C;
+        background-color: white;
+        color: #EB611C;
+        transition: .4s;
+      }
+    }
+
+    & section:first-of-type {
+      width: 20%;
+      text-align: center;
+
+      & img {
+        margin-top: 25%;
+        margin-bottom: 25%;
+        padding: 20px;
+        width: 30%;
+        border-radius: 100%;
+        background-color: #FFAA80;
+      }
+    }
+  }
+
+  & article:nth-of-type(10) {
+    text-align: center;
+    margin: auto auto 100px;
+
+    & section:first-of-type {
+      width: 100%;
+      text-align: center;
+
+      & span {
+        margin-left: 20px;
+        margin-right: 20px;
+
+      }
+    }
+  }
 
   /*************************************************************mobile*****************************************************/
 
   @media screen and(max-width: 500px) {
     margin-left: 0;
 
-    h1 {
-      margin-top: 60px;
+    & h1 {
+      margin-top: 80px;
+      margin-bottom: 20px;
     }
 
-    & form {
-      width: 90%;
-      margin-left: 0;
-      margin-right: 0;
+
+    & article:first-of-type {
+      width: 100%;
+
+      & section {
+        box-sizing: border-box;
+        width: 90%;
+        margin: auto;
+
+        & form:first-of-type {
+          display: block;
+          width: 80%;
+          text-align: center;
+          padding-top: 10px;
 
 
-      & input {
-        margin-left: 0;
-        margin-right: 0;
-
-      }
-
-      & article:nth-of-type(1n +1) {
-        margin: auto auto 20px;
-
-        input, select, textarea, button {
-          margin-left: 0;
-          margin-right: 0;
-        }
-
-        & section {
-          width: 90%;
-
-
-          & img {
-            width: 30%;
+          & select {
+            width: 100%;
+            padding: 20px;
+            margin-top: 10px;
             margin-bottom: 10px;
           }
 
-        }
-
-        & section:nth-of-type(2) {
-          & input:first-of-type, input:nth-of-type(2), input:nth-of-type(3), input:nth-of-type(4), input:nth-of-type(5), input:nth-of-type(6) {
-            width: 90%;
-            margin-left: 0;
-            margin-right: 0;
+          & input {
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
 
           }
 
-        }
+          & label:nth-of-type(3) {
 
-
-      }
-
-      & article:nth-of-type(2) {
-
-        & section {
-          width: 90%;
-
-          input {
-            width: 90%;
-
-          }
-
-          & textarea {
-            width: 90%;
-            height: 200px;
-            margin-left: 0;
-            margin-right: 0;
+            & input {
+              padding: 20px;
+              width: 90%;
+            }
           }
 
           & button {
             width: 100%;
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
 
           }
-        }
-      }
-
-      & article:nth-of-type(3) {
-
-
-        & section {
-          width: 90%;
-
-          select {
-            width: 90%;
-
-          }
-
-          input:first-of-type, input:nth-of-type(2), input:nth-of-type(3), textarea {
-            width: 90%;
-          }
-
-          & textarea {
-            height: 200px;
-            margin-left: 0;
-            margin-right: 0;
-
-          }
-
-
-          & button {
-            width: 100%;
-            margin-top: 20px;
-
-          }
-
-
-          & button:nth-of-type(2) {
-            width: 100%;
-            margin-bottom: 80px;
-          }
-
         }
       }
     }
+
+    & article:nth-of-type(1n +2) {
+      width: 100%;
+      flex-wrap: wrap;
+      margin: auto;
+      border-bottom: 5px solid #EB611C;
+
+
+      & section {
+        margin: auto;
+        text-align: center;
+
+      }
+
+
+      & section:nth-of-type(2) {
+        width: 90%;
+        text-align: center;
+
+        & p {
+          text-align: left;
+        }
+
+        & h2, h3 {
+          text-align: center;
+        }
+
+        & img {
+          width: 20%;
+
+        }
+      }
+
+      & section:nth-of-type(3) {
+        width: 90%;
+        margin: 10px auto;
+
+        & button {
+          width: 90%;
+          margin: 10px 0 0;
+        }
+      }
+
+      & section:first-of-type {
+        width: 100%;
+        margin-top: 10px;
+
+        & img {
+          width: 20%;
+          margin-top: 50px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    & article:nth-of-type(10) {
+      padding-bottom: 10px;
+
+      & section:first-of-type {
+        width: 100%;
+      }
+    }
+
   }
 
-
-  /*************************************************************tablette*****************************************************/
-
+  /**********************************************************tablette****************************************************/
   @media screen and(min-width: 501px) and(max-width: 800px) {
 
     margin-left: 0;
-    margin-left: 0;
 
-    h1 {
+    & h1 {
       margin-top: 120px;
     }
 
-    & form {
-      width: 90%;
+    & article:first-of-type {
+      width: 100%;
+      margin-bottom: 10px;
+
+      & section {
 
 
-      & input {
-        margin-left: 0;
-        margin-right: 0;
-      }
-
-      & article:nth-of-type(1n +1) {
-        margin: auto auto 20px;
-
-        input, select, textarea, button {
-          margin: 0;
-        }
-
-        & section {
-          width: 90%;
+        & form {
+          width: 80%;
           text-align: center;
 
-          & img {
-            width: 20%;
-
+          & select {
+            width: 100%;
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
           }
 
-        }
 
-        & section:nth-of-type(2) {
-          & input:first-of-type, input:nth-of-type(2), input:nth-of-type(3), input:nth-of-type(4), input:nth-of-type(5), input:nth-of-type(6) {
-            width: 90%;
-          }
-        }
+          & input {
 
-      }
-
-      & article:nth-of-type(2) {
-
-        & section {
-          width: 90%;
-
-          input {
-            width: 90%;
-          }
-
-          & textarea {
-            width: 90%;
-            height: 200px;
-            margin-left: 0;
-            margin-right: 0;
+            padding: 20px;
           }
 
           & button {
-            width: 100%;
-            margin-left: 0;
-            margin-right: 0;
-          }
-        }
-      }
-
-      & article:nth-of-type(3) {
-
-
-        & section {
-          width: 90%;
-
-          select {
-            width: 90%;
-
+            width: 50%;
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
           }
 
-          input:first-of-type, input:nth-of-type(2), input:nth-of-type(3), textarea {
-            width: 90%;
-          }
 
-          & textarea {
-            height: 200px;
-            margin-left: 0;
-            margin-right: 0;
-          }
+          & label:nth-of-type(3) {
 
-          & button {
-            width: 100%;
-            margin-top: 20px;
-            margin-left: 0;
-            margin-right: 0;
-          }
-
-          & button:nth-of-type(2) {
-            width: 100%;
-
+            & input {
+              margin-bottom: 20px;
+            }
           }
 
         }
       }
     }
 
+
+    & article:nth-of-type(1n +2) {
+      width: 100%;
+      flex-wrap: wrap;
+      margin: auto;
+      border-bottom: 5px solid #EB611C;
+
+
+      & section {
+        margin: auto;
+        text-align: center;
+      }
+
+
+      & section:nth-of-type(2) {
+        width: 90%;
+        text-align: center;
+
+        & p {
+          text-align: left;
+        }
+
+        & h2, h3 {
+          text-align: center;
+        }
+
+        & img {
+          width: 15%;
+        }
+      }
+
+      & section:nth-of-type(3) {
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+
+      }
+
+      & section:first-of-type {
+        width: 100%;
+        margin-top: 10px;
+
+        & img {
+          width: 15%;
+          margin-bottom: 30px;
+          margin-top: 20px;
+        }
+      }
+    }
+    & article:nth-of-type(10) {
+      padding-bottom: 10px;
+
+      & section:first-of-type {
+        width: 100%;
+      }
+    }
   }
 }
+
