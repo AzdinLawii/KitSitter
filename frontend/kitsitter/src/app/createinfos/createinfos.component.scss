@@ -7,14 +7,15 @@ main {
 
   & form {
     padding: 10px;
-    width: 100%;
+    width: 90%;
     margin: auto;
 
     input {
-      padding: 20px;
       border: 5px solid #EB611C;
       border-radius: 10px;
       margin: 20px 20px 20px;
+      padding: 20px;
+
     }
 
     & article:nth-of-type(1n +1) {
@@ -22,6 +23,8 @@ main {
       text-align: center;
       border-top: 5px solid #EB611C;
       padding-top: 20px;
+      margin: auto;
+
 
       & section {
         width: 60%;
@@ -32,6 +35,8 @@ main {
           border-radius: 100%;
           background-color: #FFAA80;
           width: 10%;
+          display: block;
+          margin: 10px auto;
         }
 
       }
@@ -41,11 +46,12 @@ main {
 
         & input {
           margin-top: 20px;
-
+          margin-left: 0;
+          margin-right: 0;
         }
 
         & input:first-of-type, input:nth-of-type(2) {
-          width: 44%;
+          width: 45%;
         }
 
         & input:nth-of-type(3), & input:nth-of-type(6) {
@@ -63,7 +69,7 @@ main {
       margin-top: 50px;
       text-align: center;
       display: block;
-      width: 100%;
+
 
       & section {
         width: 60%;
@@ -339,8 +345,7 @@ main {
 
           & img {
             width: 20%;
-            margin: auto auto 20px;
-            display: block;
+
           }
 
         }

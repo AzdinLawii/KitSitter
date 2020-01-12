@@ -34,7 +34,6 @@ main {
 
       & button {
         width: 10%;
-        margin: auto;
         padding: 20px;
         color: white;
         background-color: #EB611C;
@@ -42,6 +41,7 @@ main {
         border: none;
         border-radius: 10px;
         box-sizing: border-box;
+        margin: auto auto auto 10px;
       }
 
       & button:hover {
@@ -294,7 +294,7 @@ main {
 
         & form {
           width: 80%;
-
+          text-align: center;
 
           & select {
             width: 100%;
@@ -305,6 +305,7 @@ main {
 
 
           & input {
+
             padding: 20px;
           }
 
@@ -314,6 +315,15 @@ main {
             margin-top: 10px;
             margin-bottom: 10px;
           }
+
+
+          & label:nth-of-type(3) {
+
+            & input {
+              margin-bottom: 20px;
+            }
+          }
+
         }
       }
     }
