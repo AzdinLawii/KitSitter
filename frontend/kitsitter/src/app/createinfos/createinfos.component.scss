@@ -217,6 +217,10 @@ main {
           & input {
             width: 90%;
           }
+
+          & select{
+            width: 90%;
+          }
         }
 
         & section:nth-of-type(2) {
@@ -241,6 +245,7 @@ main {
           input {
             width: 90%;
           }
+
 
           & textarea {
             width: 90%;
@@ -349,6 +354,9 @@ main {
           width: 90%;
 
 
+          & select{
+            width: 90%;
+          }
           input {
             width: 90%;
           }
