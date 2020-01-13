@@ -108,7 +108,7 @@ export class CalendarComponent implements OnInit {
 
   selectDay($event) {
     const selectedTimes = document.getElementsByClassName('selected');
-    if (selectedTimes.length < 2) {
+    if (selectedTimes.length < 3) {
       $event.target.classList.contains('selected') ?
         $event.target.classList.remove('selected')
         : $event.target.classList.add('selected');
@@ -116,17 +116,19 @@ export class CalendarComponent implements OnInit {
       $event.target.classList.remove('selected');
       this.clearPropagate();
     }
-    if (selectedTimes.length === 2) {
+    if (selectedTimes.length === 3) {
       this.propagateSelection(selectedTimes[0], selectedTimes[1]);
     }
   }
 
   propagateSelection(firstSelect, secondSelect) {
     const Times = Array.from(document.getElementsByTagName('time'));
+    // tslint:disable-next-line:radix
+    const Frame = parseInt(secondSelect.innerText) - parseInt(firstSelect.innerText);
 
     console.log(firstSelect.innerText, secondSelect.innerText);
     // tslint:disable-next-line:radix
-    for (let i = 0; i < ((parseInt(secondSelect.innerText) - parseInt(firstSelect.innerText)) - 1); i++) {
+    for (let i = 0; i < Frame - 1; i++) {
       // tslint:disable-next-line:radix
       Times[parseInt(firstSelect.innerText) + i].classList.add('propagated');
     }
