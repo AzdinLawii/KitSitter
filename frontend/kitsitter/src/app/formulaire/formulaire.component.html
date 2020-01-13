@@ -1,1 +1,24 @@
-<p>formulaire works!</p>
+<main>
+  
+  <div class="container">
+    <img src="assets/img/head.svg" alt="">
+    <div class="kitsitter">
+      <div class="face">
+        <div class="eyes">
+          <div class="eye blink">
+            <div class="inner-eye left"></div>
+          </div>
+          <div class="eye blink">
+            <div class="inner-eye right"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <input  (focus)="resetEyes()"  (keyup)="moveEyes(kitemail)" class="luna-input" #kitemail id="kitemail" type="text" autocomplete="off" required>
+    <label  id="email-label" for="kitemail">Email</label>
+    <input (focus)="resetEyesPassword()" class="luna-input" id="luna-password" type="password" autocomplete="off" required>
+    <label id="password-label" for="luna-password">Password</label>
+    <button>Log In</button>
+    </div>
+</main>

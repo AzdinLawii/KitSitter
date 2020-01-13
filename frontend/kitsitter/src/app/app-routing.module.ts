@@ -4,7 +4,7 @@ import {SearchComponent} from './search/search.component';
 import {HomeComponent} from './home/home.component';
 import {CalendarComponent} from './calendar/calendar.component';
 import {CreateinfosComponent} from './createinfos/createinfos.component';
-import {FormulaireComponent} from "./formulaire/formulaire.component";
+import {FormulaireComponent} from './formulaire/formulaire.component';
 
 const routes: Routes = [
   {path: '' , component: HomeComponent},
@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'search', component: SearchComponent },
   {path: 'calendar' , component: CalendarComponent},
   {path: 'createinfos' , component: CreateinfosComponent},
-  {path: 'formulaire' , component: FormulaireComponent},
+  {path: 'login' , component:   FormulaireComponent},
 ];
 
 @NgModule({
@@ -21,4 +21,4 @@ const routes: Routes = [
   providers: []
 })
 export class AppRoutingModule { }
-export const routingComponent = [SearchComponent, HomeComponent, CreateinfosComponent];
+export const routingComponent = [SearchComponent, HomeComponent, CreateinfosComponent,   FormulaireComponent];
