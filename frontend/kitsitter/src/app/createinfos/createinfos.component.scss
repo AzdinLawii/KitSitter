@@ -350,7 +350,7 @@ main {
           }
 
           & button {
-            width: 100%;
+            width: 90%;
             margin-left: 0;
             margin-right: 0;
           }
@@ -365,12 +365,12 @@ main {
 
 
           select {
-            width: 100%;
+            width: 90%;
             margin:auto;
           }
 
           input:first-of-type, input:nth-of-type(2), input:nth-of-type(3), textarea {
-            width: 100%;
+            width: 90%;
             margin-left: 0;
             margin-right: 0;
           }
@@ -382,13 +382,13 @@ main {
           }
 
           & button {
-            width: 100%;
-            margin: 20px 0 20px;
+            width: 90%;
+            margin: 20px auto 20px;
           }
 
           & button:nth-of-type(2) {
-            width: 100%;
-            margin: 20px 0 80px;
+            width: 90%;
+            margin: 20px auto 80px;
           }
 
         }
