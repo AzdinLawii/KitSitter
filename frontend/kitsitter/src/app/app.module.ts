@@ -16,6 +16,7 @@ import LocalFr from '@angular/common/locales/fr';
 import LocalFrExtra from '@angular/common/locales/extra/fr';
 import { CreateinfosComponent } from './createinfos/createinfos.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
+import { TrelloComponent } from './trello/trello.component';
 
 registerLocaleData(LocalFr, 'fr-FR', LocalFrExtra);
 
@@ -30,7 +31,8 @@ registerLocaleData(LocalFr, 'fr-FR', LocalFrExtra);
     SearchComponent,
     CalendarComponent,
     CreateinfosComponent,
-    FormulaireComponent
+    FormulaireComponent,
+    TrelloComponent
   ],
   imports: [
     BrowserModule,

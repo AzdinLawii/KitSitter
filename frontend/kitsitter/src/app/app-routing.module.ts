@@ -5,6 +5,7 @@ import {HomeComponent} from './home/home.component';
 import {CalendarComponent} from './calendar/calendar.component';
 import {CreateinfosComponent} from './createinfos/createinfos.component';
 import {FormulaireComponent} from './formulaire/formulaire.component';
+import {TrelloComponent} from './trello/trello.component';
 
 const routes: Routes = [
   {path: '' , component: HomeComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'calendar' , component: CalendarComponent},
   {path: 'createinfos' , component: CreateinfosComponent},
   {path: 'login' , component:   FormulaireComponent},
+  {path: 'trello' , component:   TrelloComponent},
 ];
 
 @NgModule({
